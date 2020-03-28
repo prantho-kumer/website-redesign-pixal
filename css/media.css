@@ -1,0 +1,150 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* header */
+    .header {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .logo_wrapper {
+        position: absolute;
+        top: 15px;
+        z-index: 1;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+    /* header */
+    /* banner start */
+    .carousel-item-custom {
+        padding: 100px 10px;
+    }
+
+    .slide_content h1 {
+        font-size: 26px;
+    }
+
+    .banner_btn a {
+        font-size: 16px;
+    }
+
+    /* banner end */
+    .go_down {
+        top: -30px;
+    }
+
+    .go_down a img {
+        width: 15px;
+    }
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* header */
+    .header {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .logo_wrapper {
+        position: absolute;
+        top: 9px;
+        z-index: 1;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+    /* header */
+    /* banner start */
+    .carousel-item-custom {
+        padding: 110px 10px;
+    }
+
+    .slide_content h1 {
+        font-size: 32px;
+    }
+
+    .banner_btn a {
+        font-size: 20px;
+    }
+
+    /* banner end */
+    .go_down a img {
+        width: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* header start*/
+    .header {
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    .logo_wrapper {
+        position: absolute;
+        top: 9px;
+        z-index: 1;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+    /* header end*/
+    /* banner start */
+    .carousel-item-custom {
+        padding: 130px 0;
+    }
+
+    .slide_content h1 {
+        font-size: 36px;
+    }
+
+    .banner_btn a {
+        font-size: 22px;
+    }
+
+    /* banner end */
+
+
+    .go_down a img {
+        width: 25px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .menu {
+        justify-content: center !important;
+    }
+
+    /* header */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
