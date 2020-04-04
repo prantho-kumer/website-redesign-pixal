@@ -9,13 +9,15 @@
     <script src="https://kit.fontawesome.com/79e5125f6d.js" SameSite=None; Secure crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-
+    <!-- plug in -->
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
 
 
     <!--  CSS link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
 
@@ -34,7 +36,7 @@
                             <a class="nav-link " href="#">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MENU</a>
@@ -63,7 +65,7 @@
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item d-lg-none d-block">
-                                <a class="nav-link" href="#">ABOUT</a>
+                                <a class="nav-link" href="#about">ABOUT</a>
                             </li>
                             <li class="nav-item d-lg-none d-block">
                                 <a class="nav-link" href="#">MENU</a>
@@ -96,7 +98,20 @@
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <!-- single -->
-                            <div class="carousel-item carousel-item-custom carousel-item1 active">
+                            <div class="carousel-item  carousel-item-custom carousel-item2 active">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-md-8">
+                                        <div class="slide_content slide_content-2">
+                                            <h1>LOVES TESTY & HEALTHY FOOD</h1>
+                                            <p>A FINE DINNING RESTAURANT</p>
+                                            <div class="banner_btn"><a href="#">Order now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/   single -->
+                            <!-- single -->
+                            <div class="carousel-item carousel-item-custom carousel-item1 ">
                                 <div class="row justify-content-center align-items-center">
                                     <div class="col-md-8">
                                         <div class="slide_content slide_content-1">
@@ -109,21 +124,6 @@
                                 </div>
                             </div>
                             <!--/   single -->
-                            <!-- single -->
-                            <div class="carousel-item  carousel-item-custom carousel-item2 ">
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col-md-8">
-                                        <div class="slide_content slide_content-2">
-                                            <h1>LOVES TESTY & HEALTHY FOOD</h1>
-                                            <p>A FINE DINNING RESTAURANT</p>
-                                            <div class="banner_btn"><a href="#">Order now</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/   single -->
-
-
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                             data-slide="prev">
@@ -144,9 +144,370 @@
     <!--/  banner -->
     <!-- go down -->
     <div class="go_down">
-        <a href="#"><img src="img/go-down.png" alt="go down icon"></a>
+        <a href="#about"><img src="img/go-down.png" alt="go down icon"></a>
     </div>
     <!--/   go down -->
+    <div class="fixed-view-menu d-none d-xl-block ">
+        <p class="fixed-left-text ">
+            <a href="#">view menu</a>
+        </p>
+    </div>
+    <div class="fixed-book-table d-none d-xl-block ">
+        <p class="fixed-left-text">
+            <a href="#">Book a table</a>
+        </p>
+    </div>
+
+    <!-- about -->
+    <section class="about section_padding" id="about">
+        <div class="container">
+            <!-- section heading -->
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="section_heading">
+                        <h1 class="heading">About</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- section heading -->
+            <div class="row row_margin">
+                <div class="col-md-6 align-self-center">
+                    <div class="about_image">
+                        <img class="img-fluid" src="img/about.jpg" alt="about ">
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="about_text_wrapper">
+                        <p class="about_text">Nam eget urna nec lectus feugiat bibendum quis at quam. Aliquam idiss
+                            congue tellus, et
+                            tempus lacus. Cur iconvallis faucibus ex, a congue lectus pretium ac. Vivamus mi quam,
+                            fermentum sed odio vitae, egetisss</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <!-- popular dishes -->
+    <section class="pop_dishes section_padding">
+        <div class="container">
+
+            <!-- section heading -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section_heading">
+                        <h1 class=" heading heading_yellow ">Our <span class="yellow_text">Popular</span> Dishes</h1>
+                        <p class="section_subtext">Proin accumsan est ac iaculis ullamcorper. Integer euismod hendrerit
+                            urna. Quisque a varius
+                            augue, sed elementum lacus. Integer convallis quis mauris tincidunt ullamcorper. Phasellus
+                            consequat id tellus eu aliquam. Quisque suscipit ipsum.</p>
+                        <div class="heading_icon"> <img src="img/title_icon.png" alt="title"> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section heading -->
+
+            <!-- second row -->
+            <div class="row row_margin ">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/dish-1.jpg" alt="" class="img-fluid">
+                            <div class="caption">
+                                <h4 class="float-right yellow_text">$7.99</h4>
+                                <h4><a class="yellow_text" href="#">Noodle</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the.</p>
+                            </div>
+                            <div class="ratings">
+                                <p>
+                                    <span class="yellow_text"><i class=" fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class=" fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class=" fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class=" fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class=" fas fa-star"></i></span>
+                                    (15 reviews)
+                                </p>
+                            </div>
+                            <div class="space-ten"></div>
+                            <div class="btn-ground text-center">
+                                <button type="button" class="btn btn-outline-warning  mb-2"><i
+                                        class="fa fa-shopping-cart"></i> Add To
+                                    Cart</button>
+                                <button type="button" class="btn btn-outline-success mb-2" data-toggle="modal"
+                                    data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                            </div>
+                            <div class="space-ten"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/dish-2.jpg" alt="" class="img-fluid">
+                            <div class="caption">
+                                <h4 class="float-right yellow_text">$6.99</h4>
+                                <h4><a class="yellow_text" href="#">
+                                        Rice</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the.</p>
+                            </div>
+                            <div class="ratings">
+                                <p>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    (15 reviews)
+                                </p>
+                            </div>
+                            <div class="space-ten"></div>
+                            <div class="btn-ground text-center">
+                                <button type="button" class="btn btn-outline-warning mb-2"><i
+                                        class="fa fa-shopping-cart"></i> Add To
+                                    Cart</button>
+                                <button type="button" class="btn btn-outline-success mb-2" data-toggle="modal"
+                                    data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                            </div>
+                            <div class="space-ten"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/dish-3.jpg" alt="" class="img-fluid">
+                            <div class="caption">
+                                <h4 class="float-right yellow_text">$9.99</h4>
+                                <h4><a class="yellow_text" href="#">Pasta</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the.</p>
+                            </div>
+                            <div class="ratings">
+                                <p>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    (15 reviews)
+                                </p>
+                            </div>
+                            <div class="space-ten"></div>
+                            <div class="btn-ground text-center">
+                                <button type="button" class="btn btn-outline-warning mb-2"><i
+                                        class="fa fa-shopping-cart"></i> Add To
+                                    Cart</button>
+                                <button type="button" class="btn btn-outline-success mb-2" data-toggle="modal"
+                                    data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                            </div>
+                            <div class="space-ten"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade product_view" id="product_view">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header px-5">
+                        <h3 class="modal-title yellow_text">Rice</h3>
+                        <a href="#" data-dismiss="modal" class="class align-self-center"><span class=""> <i
+                                    class=" fas fa-times"></i></span></a>
+                    </div>
+                    <div class="modal-body p-3 m-3">
+                        <div class="row">
+                            <div class="col-md-6 product_img">
+                                <img src="img/dish-1.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 product_content">
+                                <h4>Product Id: <span>51526</span></h4>
+                                <div class="rating">
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+                                    <span class="yellow_text"><i class="fas fa-star"></i></span>
+
+
+                                    (10 reviews)
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $10.00 <small
+                                        class="pre-cost"><span class="glyphicon glyphicon-usd"></span> $12.00</small>
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <select class="form-control" name="select">
+                                            <option value="">Add on</option>
+                                            <option value="">Cheese</option>
+                                            <option value="">salad</option>
+                                            <option value="">Sauce</option>
+                                        </select>
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <select class="form-control" name="select">
+                                            <option value="" selected="">QTY</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                                <div class="space-ten"></div>
+                                <div class="btn-ground d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-warning mx-3"><span class=""><i
+                                                class="fas fa-cart-plus mb-2"></i></span> Add To Cart</button>
+                                    <button type="button" class="btn btn-outline-success mx-3"><span class=""><i
+                                                class="fas fa-heart mb-2"></i></span> Add To Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second row -->
+
+        <!-- third row ( view all button) -->
+        <div class="row justify-content-center row_margin">
+            <div class=" col-md-8 text-center ">
+                <button class="btn btn-outline-warning text-uppercase all_dish_btn">view all <span><i
+                            class="fas fa-arrow-right"></i></span></button></div>
+        </div>
+
+
+    </section>
+    <!-- popular dishes -->
+
+    <!-- food menu -->
+    <section class="food_menu yellow_section section_padding">
+        <div class="container">
+            <!-- section heading -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section_heading">
+                        <h1 class=" heading heading_section_yellow ">Our <span class="text-dark">Food</span>
+                            Menu
+                        </h1>
+                        <p class="section_subtext text-white">Proin accumsan est ac iaculis ullamcorper. Integer euismod
+                            hendrerit
+                            urna. Quisque a varius
+                            augue, sed elementum lacus. Integer convallis quis mauris tincidunt ullamcorper. Phasellus
+                            consequat id tellus eu aliquam. Quisque suscipit ipsum.</p>
+                        <div class="heading_icon"> <img src="img/title_icon.png" alt="title"> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section heading -->
+
+            <!-- second row -->
+            <div class="food_menu_wrapper">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-12" id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                        <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                        <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+                    </div>
+                    <div class="row row_margin justify-content-center">
+                        <div class="col-md-6 filterDiv cars">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="img/food-menu/1.jpg" alt="food menu-one">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single  end-->
+
+                        <div class="col-md-6 filterDiv colors fruits">Orange</div>
+                        <div class="col-md-6 filterDiv cars">Volvo</div>
+                        <div class="col-md-6 filterDiv colors">Red</div>
+                        <div class="col-md-6 filterDiv cars animals">Mustang</div>
+                        <div class="col-md-6 filterDiv colors">Blue</div>
+                        <div class="col-md-6 filterDiv animals">Cat</div>
+                        <div class="col-md-6 filterDiv animals">Dog</div>
+                        <div class="col-md-6 filterDiv fruits">Melon</div>
+                        <div class="col-md-6 filterDiv fruits animals">Kiwi</div>
+                        <div class="col-md-6 filterDiv fruits">Banana</div>
+                        <div class="col-md-6 filterDiv fruits">Lemon</div>
+                        <div class="col-md-6 filterDiv animals">Cow</div>
+                        <div class="col-md-6 filterDiv animals">Cow</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <script>
+                filterSelection("all")
+
+                function filterSelection(c) {
+                    var x, i;
+                    x = document.getElementsByClassName("filterDiv");
+                    if (c == "all") c = "";
+                    for (i = 0; i < x.length; i++) {
+                        w3RemoveClass(x[i], "show");
+                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                    }
+                }
+
+                function w3AddClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        if (arr1.indexOf(arr2[i]) == -1) {
+                            element.className += " " + arr2[i];
+                        }
+                    }
+                }
+
+                function w3RemoveClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        while (arr1.indexOf(arr2[i]) > -1) {
+                            arr1.splice(arr1.indexOf(arr2[i]), 1);
+                        }
+                    }
+                    element.className = arr1.join(" ");
+                }
+
+                // Add active class to the current button (highlight it)
+                var btnContainer = document.getElementById("myBtnContainer");
+                var btns = btnContainer.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+            </script>
+            <!-- second row -->
+        </div>
+    </section>
+    <!-- food menu -->
+
+
+
+
+
 
 
 
@@ -161,16 +522,34 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+    <!-- plug in -->
+    <!-- owl carousel -->
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+
+
+    <!-- bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="js/script.js"></script>
 </body>
 <script>
     $(document).ready(function () {
         $("#header_search_btn").click(function () {
             $(".header-search-form1").toggle();
         });
+        // stick header
+        $(window).scroll(function () { // this will work when your window scrolled.
+            var height = $(window).scrollTop(); //getting the scrolling height of window
+            if (height > 100) {
+                $(".header").addClass('sticky_header');
+                $('.logo').css("width", "110px")
 
+            } else {
+                $(".header").removeClass('sticky_header')
+            }
+        });
     });
 </script>
 

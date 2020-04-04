@@ -44,6 +44,11 @@
         width: 15px;
     }
 
+    /* about */
+    .about_text {
+        margin-top: 20px;
+    }
+
 
 }
 
@@ -88,6 +93,11 @@
     .go_down a img {
         width: 20px;
     }
+
+    /* about */
+    .about_text {
+        margin-top: 20px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -129,10 +139,15 @@
 
     /* banner end */
 
-
     .go_down a img {
         width: 25px;
     }
+
+    /* about */
+    .about_text {
+        font-size: 18px;
+    }
+
 }
 
 
